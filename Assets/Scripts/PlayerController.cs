@@ -55,7 +55,6 @@ public class PlayerController : MonoBehaviour
         {
             purple++;
             purpleText.GetComponent<Text>().text = "Purple: " + purple;
-
         }
         if (collision.gameObject.CompareTag("Yellow"))
         {

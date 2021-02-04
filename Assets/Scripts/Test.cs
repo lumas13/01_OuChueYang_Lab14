@@ -18,11 +18,13 @@ public class Test : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter(Collider other)
+ 
+
+    private void OnCollisionEnter(Collision collision)
     {
-        if(other.gameObject.CompareTag("Plyer"))
+        if (collision.gameObject.CompareTag("Plyer"))
         {
-            Debug.Log("test");
+            //Debug.Log("test");
             audioSource.Play();
         }
     }
